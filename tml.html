@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript">$(document).ready(function(){
+        $("#but_submit").click(function(){
+            var username = $("#uname").val().trim();
+            var password = $("#pwd").val().trim();
+            if( username != "" && password != "" ){
+                $.ajax({
+                    url:'https://localhost:44330/api/LoginAPI',
+                    type:'get',
+                    data:{uname:username,pwd:password},
+                    success:function(response){window.location = "dash.html";}, 
+                    error:function(response){alert("Invalid username and password!")}
+                });
+            }
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="all">
+      <div class="main">
+        <h1>Welcome to Somepage</h1>
+        <h4>Where nothing makes sense</h4>
+      </div>
+      <div class="logincl" id="some">
+        <h4>Please Login</h4>
+        <form name="loginForm">
+          <table >
+            <tr>
+              <td>Username:</td>
+              <td><input name="uname" id="uname" type="text" placeholder="userid"></td>
+            </tr>
+            <tr>
+              <td>Password:</td>
+              <td><input name="pwd" id="pwd" type="password" placeholder="password"></td>
+            </tr>
+          </table>
+          <input type="button" value="Login" name="but_submit" id="but_submit">
+          <a id="p" href="reg.html">New User?</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

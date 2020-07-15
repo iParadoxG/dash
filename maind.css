@@ -1,0 +1,84 @@
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFEECC;
+  }
+  
+  h2 {
+    font-size: 32px;
+    text-shadow: 0 3px #000000;
+  }
+  
+  table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+  }
+  
+  .main ul li, h4  {
+      display: inline;
+      padding-right: 10px;
+  }
+  
+  .logincl td{
+    padding: 3px;
+  }
+  
+  #sub{
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: antiquewhite;
+    border: 2px brown;
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  #p{
+    margin-top: 5%;
+    float: right;
+    font-size: 0.75rem;
+    color: rgb(0, 61, 102);
+  }
+  .all{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logincl {
+    text-align: center;
+    background-color: #9b9794;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border: 2px solid #c23c32;
+    color: #FFEECC;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9.5%;
+  }
+  
+  .chart {
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 400px;
+  }
+  
+  .logincl h4{
+    color: #eeaa6a;
+    font-size: 1.25rem;
+    -webkit-text-stroke: 0.5px navy;
+  }
+  
+  .main {
+    background-color: #ca7128;
+    padding: 12px;
+    padding-left: 24px;
+    color: #FFEECC;
+  }
+  
