@@ -1,2 +1,1 @@
-~need to establish db connection~
-connection made Ajax get() implemented
+registration page need to be edited with db access
